@@ -1,6 +1,6 @@
 <?php
 /**
- * This file is part of the Laravel Fakerino package.
+ * This file is part of the Fakerino Laravel package.
  *
  * (c) Nicola Pietroluongo <nik.longstone@gmail.com>
  *
@@ -13,7 +13,15 @@ namespace Fakerino\Package;
 use Fakerino\Fakerino;
 use Illuminate\Support\ServiceProvider;
 
-class FakerinoProvider extends ServiceProvider {
+class FakerinoProvider extends ServiceProvider
+{
+
+    /**
+     * Indicates if loading of the provider is deferred.
+     *
+     * @var bool
+     */
+    protected $defer = true;
 
     /**
      * Bootstrap the application events.
@@ -22,9 +30,9 @@ class FakerinoProvider extends ServiceProvider {
      */
     public function boot()
     {
-        $this->mergeConfigFrom(
-            __DIR__ . '/../../../../config/fakerino.php', 'fakerino'
-        );
+        $this->publishes([
+            __DIR__.'/../config/fakerino.php' => config_path('fakerino.php'),
+        ]);
     }
 
     /**
@@ -34,10 +42,19 @@ class FakerinoProvider extends ServiceProvider {
      */
     public function register()
     {
-        $this->app->singleton('Riak\Contracts\Connection', function($app)
+        $this->app->singleton('Fakerino\Fakerino', function($app)
         {
-            return new Fakerino($app['config']['fakerino']);
+            return Fakerino::create($app['config']['fakerino']);
         });
     }
 
+    /**
+     * Get the services provided by the provider.
+     *
+     * @return array
+     */
+    public function provides()
+    {
+        return ['Fakerino\Fakerino'];
+    }
 }

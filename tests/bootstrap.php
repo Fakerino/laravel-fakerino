@@ -1,6 +1,6 @@
 <?php
 /**
- * This file is part of the Laravel Fakerino package.
+ * This file is part of the Fakerino Laravel package.
  *
  * (c) Nicola Pietroluongo <nik.longstone@gmail.com>
  *

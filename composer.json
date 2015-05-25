@@ -1,8 +1,8 @@
 {
   "name": "fakerino/laravel-fakerino",
   "description": "Fake data generator Laravel package",
-  "keywords": ["symfony", "fake", "faker", "generator", "data", "bundle"],
-  "homepage": "http://github.com/niklongstone/symfony-fakerino",
+  "keywords": ["laravel", "fake", "faker", "generator", "data", "package"],
+  "homepage": "http://github.com/niklongstone/laravel-fakerino",
   "type": "symfony-bundle",
   "license": "MIT",
   "authors": [
@@ -17,14 +17,14 @@
     "fakerino/fakerino": ">=0.6.2"
   },
   "require-dev": {
-    "phpunit/phpunit": "~4.1.3"
+    "phpunit/phpunit": "~4.1.3",
+    "illuminate/support": "5.0.*"
   },
   "autoload": {
-    "psr-0": {
-      "Fakerino\\Package": "src/"
+    "psr-4": {
+      "Fakerino\\Package\\": "src/"
     }
   },
-  "target-dir": "Fakerino/Bundle/FakerinoBundle",
   "config": {
     "bin-dir": "bin"
   }
