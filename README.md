@@ -14,9 +14,22 @@ More information in the [official documentation](https://github.com/niklongstone
 
 ```JSON
     "require": {
-        "fakerino/laravel-fakerino": "0.0.1",
+        "fakerino/laravel-fakerino": "0.0.*",
     }
 ```
+
+### Install the ODS data sample in two ways:
+ - Add a script to your composer.json:
+```JSON
+  "scripts": {
+        "post-install-cmd": "vendor/fakerino/fakerino/build/ods vendor/fakerino/fakerino/data",
+        "post-update-cmd": "vendor/fakerino/fakerino/build/ods vendor/fakerino/fakerino/data"
+    }
+```
+ In this way the data will be always updated automatically via composer.
+
+ - Run maually the command (after the fakerino composer installation):  
+`$ vendor/fakerino/fakerino/build/ods vendor/fakerino/fakerino/data`
 
 ### Initializing the package
 
