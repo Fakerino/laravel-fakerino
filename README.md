@@ -1,7 +1,7 @@
 #Fakerino Laravel Package
 
 [![Latest Stable Version](https://poser.pugx.org/fakerino/laravel-fakerino/v/stable.svg)](https://packagist.org/packages/fakerino/laravel-fakerino)
-[![Travis Ci](https://travis-ci.org/niklongstone/symfony-fakerino.svg?branch=master)](https://travis-ci.org/niklongstone/laravel-fakerino)
+[![Travis Ci](https://travis-ci.org/niklongstone/laravel-fakerino.svg?branch=master)](https://travis-ci.org/niklongstone/laravel-fakerino)
 [![License](https://poser.pugx.org/fakerino/laravel-fakerino/license.svg)](https://packagist.org/packages/fakerino/laravel-fakerino)
 
 The Fakerino Laravel provides integration of [Fakerino](https://github.com/niklongstone/Fakerino) into the Laravel framework.
