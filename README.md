@@ -4,9 +4,9 @@
 [![Travis Ci](https://travis-ci.org/niklongstone/laravel-fakerino.svg?branch=master)](https://travis-ci.org/niklongstone/laravel-fakerino)
 [![License](https://poser.pugx.org/fakerino/laravel-fakerino/license.svg)](https://packagist.org/packages/fakerino/laravel-fakerino)
 
-The Fakerino Laravel provides integration of [Fakerino](https://github.com/niklongstone/Fakerino) into the Laravel framework.
+The Fakerino Laravel provides integration of [Fakerino](https://github.com/Fakerino/Fakerino) into the Laravel framework.
 
-More information in the [official documentation](https://github.com/niklongstone/Fakerino/wiki).
+More information in the [official documentation](http://www.fakerino.io).
 
 ## Installation
 
